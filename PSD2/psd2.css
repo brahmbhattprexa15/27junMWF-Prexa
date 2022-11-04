@@ -1,0 +1,498 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+body {
+    background-image: url(logo2/Background.png);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.bg-color {
+    background-color: #c87e6b;
+}
+
+.row {
+    display: flex;
+}
+
+.justify {
+    justify-content: space-between;
+}
+
+.align {
+    align-items: center;
+}
+
+.text ul li {                 
+    display: inline-block;
+}
+
+.text ul li a {
+    padding: 0 50px;
+    color: white;
+    display: inline-block;
+}
+
+.text button {
+    background-color: #c87e6b;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 25px 25px;
+
+}
+
+.icon ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.icon ul li a {
+    color: #fff;
+}
+
+.col-50 {
+    width: 50%;
+
+}
+
+.se1-text {
+    width: 80%;
+    margin-bottom: 100px;
+    padding: 0px 0px 100px 0px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.se1-text h3 {
+    line-height: 3.2rem;
+    font-size: 3.9rem;
+}
+
+.se1-text h4 {
+    font-size: 25px;
+    margin: 10px 0 10px 0;
+    color: #765a33;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+.se1-text p {
+    line-height: 24px;
+    color: #765a33;
+    word-spacing: 3px;
+}
+
+.se1-text button {
+    margin: 20px 20px 0 0;
+    border: none;
+}
+
+.btn {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.se1-img {
+    text-align: end;
+}
+
+.se1-img img {
+    width: 100%;
+}
+
+.se1-text p {
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+.p-r {
+    position: relative;
+}
+
+.leaf1 {
+    position: absolute;
+    top: -300px;
+    right: 21px
+}
+
+.p-f {
+    position: relative;
+}
+
+.leaf2 {
+    position: absolute;
+    top: 150px;
+    left: -90px;
+}
+
+.se2-color {
+    background: #765a33;
+}
+
+.col-25 {
+    width: 25%;
+}
+
+.se2-text {
+    color: white;
+    text-align: center;
+    padding: 70px 0;
+
+}
+
+.se2-text h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+}
+
+.col-1 {
+    width: 100%;
+}
+
+.se3-heading {
+    margin: 100px 0;
+    text-align: center;
+}
+
+.se3-heading h3 {
+    line-height: 3.5rem;
+    font-size: 3.5rem;
+}
+
+.se3-heading p {
+    color: #765a33;
+    font-size: 40px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.se3-img-text i {
+    color: red;
+    margin-right: 20px;
+    display: flex;
+    justify-content: end;
+    text-align: end;
+}
+
+
+.text-11 {
+    width: 80%;
+    margin: 0 auto;
+
+
+}
+
+.text-11 h4 {
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
+
+.text-11 p {
+    text-align: left;
+}
+
+.text-11 button {
+    border-radius: 20px 20px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.alighn {
+    align-items: center;
+    margin: 0 auto;
+}
+
+.btn-2 button {
+    background-color: #bcbcbc;
+    margin: 100px 20px;
+    padding: 20px;
+    border-radius: 25px 25px;
+}
+
+.text-12 {
+    text-align: center;
+}
+
+.col-100 {
+    width: 100%;
+}
+
+.text-12 h2 {
+    font-size: 60px;
+    font-weight: 900;
+    color: black;
+}
+
+.text-12 p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    color: #765a33;
+}
+
+.img-5 {
+    position: relative;
+    text-align: center;
+}
+
+.img-5 img {
+    margin: 100px 0;
+}
+
+.img-5::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 40px;
+    top: 60px;
+    height: 200px;
+    width: 400px;
+    border: 4px solid #765a33;
+
+}
+
+.img-5:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 30px;
+    bottom: 60px;
+    height: 200px;
+    width: 200px;
+    background-color: #c87e6b;
+}
+
+.video-icon {
+
+    position: absolute;
+    top: 400px;
+    color: #ffffff;
+
+    left: 0;
+    right: 0;
+
+
+}
+
+.bg-se5 {
+    background-color: #dbc06e;
+}
+
+.se5-img img {
+    margin-bottom: -4px;
+    width: 100%;
+
+}
+
+.se5-text {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.se5-text button {
+    padding: 8px 40px;
+    border-radius: 20px;
+    background-color: #000;
+    color: #ffffff;
+}
+
+.se5-text h4 {
+    font-size: 100px;
+    font-weight: 900;
+
+
+}
+
+.se5-text p {
+    font-weight: 500;
+    font-size: 30px;
+    width: 40%;
+    margin: 0 auto;
+
+}
+
+.se6 {
+    padding: 80px 0;
+}
+
+.se6-img {
+
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.se6-img img {
+    margin: 100px 0;
+    width: 100%;
+
+
+
+}
+
+.se6-img::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: -30px;
+    top: 70px;
+    height: 100px;
+    width: 150px;
+    background-color: #c87e6b;
+
+}
+
+.se6-img:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: -30px;
+    bottom: 70px;
+    height: 200px;
+    width: 200px;
+    border: 4px solid #765a33;
+
+}
+
+
+.se6-text {
+
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+.se6-text h4 {
+    width: 70%;
+    font-size: 50px;
+}
+
+.se6-text img {
+
+    padding: 20px 0;
+    width: 20%;
+
+
+}
+
+.se6-text p {
+    color: #765a33;
+    padding: 20px 0;
+}
+
+.se6-text button {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #000;
+    color: #ffffff;
+
+}
+
+.form-heading {
+    text-align: center;
+
+
+}
+
+.form-heading h4 {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 58px;
+    line-height: 58px;
+
+}
+
+.form-heading p {
+    padding: 20px 0;
+    font-size: 25px;
+    width: 80%;
+    margin: 0 auto;
+    color: #765a33;
+
+}
+
+.form-heading input {
+    width: 80%;
+    padding: 15px 20px;
+}
+
+.form-heading textarea {
+    padding: 15px 20px;
+    width: 80%;
+}
+
+.form-heading button {
+    padding: 8px 40px;
+    border-radius: 20px;
+    color: #ffffff;
+    background-color: #c87e6b;
+    margin: 50px 0;
+    border: none;
+}
+
+.footer-bg {
+    padding: 80px 0;
+    background-color: #424242;
+}
+
+.col-33 {
+   
+    width: 30%;
+    margin: 0 auto;
+
+
+}
+
+.footer-text {
+    margin: 0 50px;
+}
+
+.footer-text h4 {
+    color: #ffffff;
+
+    padding: 20px 0;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.footer-text ul li {
+    font-size: 20px;
+    line-height: 30px;
+}
+.footer-icon{
+  text-align: end;
+  padding: 70px 0;
+}
+
+.footer-text ul li a {
+    color: #ffffff;
+}
+.footer-icon ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.footer-icon ul li a{
+    color: #ffffff;
+}
+.footer-icon ul li i{
+    border-radius: 50%;
+    padding: 10px;
+    border: 2px solid white;
+}
