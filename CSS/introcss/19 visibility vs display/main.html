@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility vs Display</title>
+    <style>
+         h3 {
+            background-color: rgba(150, 78, 217, 0.418);
+            border: 2px dotted rgba(82, 82, 185, 0.495);
+            text-transform: capitalize;
+            font-size: 20px;
+        }
+        .hidden{
+            visibility: hidden;
+        }
+        .bg p{
+            background-color: orange;
+            width: 200px;
+        }
+        .none{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>visibility : hidden , collapse, visible</h3>
+    <div class="bg">
+        <p>before</p>
+        <p class="hidden">hidden</p>
+        <p>after</p>
+    </div>
+
+    <h3>Display</h3>
+    <div class="bg">
+        <p>before</p>
+        <p class="none">none</p>
+        <p>after</p>
+    </div>
+    
+</body>
+</html>

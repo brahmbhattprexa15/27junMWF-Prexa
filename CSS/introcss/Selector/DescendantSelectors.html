@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descendant Selectors</title>
+    <style>
+        ul.cust-class a {
+            text-decoration:none ;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Descendant selector (space)</h2>
+    <p>The descendant selector matches all elements that are descendants of a specified element.</p>
+      
+    <ul>
+        <li><a href="#">test</a></li>
+        <li><a href="#">test</a></li>
+        <li><a href="#">test</a></li>
+        <li><a href="#">test</a></li>
+    </ul>
+
+        
+      
+    <ul class="cust-class">
+        <li><a href="#">test</a></li>
+        <li><a href="#">test</a></li>
+        <li><a href="#">test</a></li>
+        <li><a href="#">test</a></li>
+    </ul>
+
+        
+      
+    <ul>
+        <li><a href="#">test</a></li>
+        <li><a href="#">test</a></li>
+        <li><a href="#">test</a></li>
+        <li><a href="#">test</a></li>
+    </ul>
+
+    <div class="cust-class"> 
+        <p>something <a href="#">Anchor</a></p>
+
+    </div>
+
+        
+</body>
+</html>

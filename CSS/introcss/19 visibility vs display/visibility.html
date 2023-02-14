@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility</title>
+    <style>
+         h3 {
+            background-color: rgba(150, 78, 217, 0.418);
+            border: 2px dotted rgba(82, 82, 185, 0.495);
+            text-transform: capitalize;
+            font-size: 20px;
+        }
+        div {
+            display: flex;
+
+        }
+
+        div p {
+            width: 50px;
+            background-color: blueviolet;
+            margin: 20px;
+
+            border: 1px solid black;
+        }
+
+        .visible {
+            visibility: visible;
+        }
+
+        .hidden {
+            visibility: hidden;
+
+        }
+
+        .collapse {
+            visibility: collapse;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>visibility</h3>
+    <p>The visibility CSS property shows or hides an element without changing the layout of a document. The property can
+        also hide rows or columns in a table.</p>
+
+        <ul>
+            <li>
+                <h3>visibility -visible </h3>
+                <p>The element box is visible.</p>
+            </li>
+            <li>
+                <h3>visibility - hidden</h3>
+                <p>The element box is invisible (not drawn), but still affects layout as normal. Descendants of the element will be visible if they have visibility set to visible. The element cannot receive focus (such as when navigating through tab indexes).</p>
+            </li>
+
+            <li>
+                <h3>visibility - collapse</h3>
+                <p>For table rows, columns, column groups, and row groups, the row(s) or column(s) are hidden and the space they would have occupied is removed (as if display: none were applied to the column/row of the table). However, the size of other rows and columns is still calculated as though the cells in the collapsed row(s) or column(s) are present. This value allows for the fast removal of a row or column from a table without forcing the recalculation of widths and heights for the entire table.</p>
+            </li>
+        </ul>
+
+    <h3>visible</h3>
+    <div class="visibility">
+        <p class="visible">hide me</p>
+        <p>item 1</p>
+        <p>item 2</p>
+    </div>
+    <h3>hidden</h3>
+    <div class="visibility">
+        <p class="hidden">hide me</p>
+        <p>item 1</p>
+        <p>item 2</p>
+    </div>
+
+    <h3>table hidden</h3>
+    <div class="visibility">
+        <table class="hidden">
+            <tr>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <h3>collapse</h3>
+
+    <table class="collapse">
+        <tr>
+            <td>test</td>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+    </table>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Image/img10.jpeg" type="image/x-icon">
+    <title>All about filter</title>
+    <style>
+        h3 {
+            background-color: rgba(150, 78, 217, 0.418);
+            border: 2px dotted rgba(82, 82, 185, 0.495);
+            text-transform: capitalize;
+            font-size: 20px;
+        }
+
+        img {
+            height: 200px;
+            width: 300px;
+        }
+
+        .filter-blur {
+            filter: blur(5px);
+        }
+
+        .filter-brightness {
+            filter: brightness(0.8);
+        }
+
+        .filter-contract {
+            filter: contrast(200%);
+        }
+
+        .filter-drop-shadow {
+            filter: drop-shadow(16px 18px 25px green);
+        }
+
+        .filter-grayscale {
+            filter: grayscale(60%);
+        }
+
+        .filter-hue-rotate {
+            filter: hue-rotate(110deg);
+        }
+
+        .filter-invert {
+            filter: invert(60%);
+        }
+
+        .filter-opacity {
+            filter: opacity(30%);
+        }
+
+        .filter-saturate {
+            filter: saturate(40%);
+        }
+
+        .filter-sepia {
+            filter: sepia(60%);
+        }
+    </style>
+</head>
+
+<body>
+    <h3>filter</h3>
+    <p> The filter CSS property applies graphical effects like blur or color shift to an element. Filters are commonly
+        used to adjust the rendering of images, backgrounds, and borders.</p>
+
+    <p> Included in the CSS standard are several functions that achieve predefined effects. You can also reference an
+        SVG filter with a URL to an SVG filter element. </p>
+
+
+    <h3>filter functions</h3>
+    <ol>
+        <li>
+            <h3> filter: blur</h3>
+            <p>The radius of the blur, specified as a length. It defines the value of the standard deviation to the
+                Gaussian function, i.e., how many pixels on the screen blend into each other; thus, a larger value will
+                create more blur. A value of 0 leaves the input unchanged. The initial value for interpolation is 0.</p>
+            <ul>
+                <li>blur &nbsp; values</li>
+                <li> blur(0) &nbsp; No effect </li>
+                <li> blur(8px) &nbsp; Blur with 8px radius</li>
+                <li> blur(1.17rem) &nbsp; Blur with 1.17rem radius </li>
+            </ul>
+
+
+            <img src="../Image/img2.jpeg" alt="" class="filter-blur">
+        </li>
+        <li>
+            <h3> filter: brightness</h3>
+            <p>The brightness of the result, specified as a number or a percentage. A value under 100% darkens the
+                image, while a value over 100% brightens it. A value of 0% will create an image that is completely
+                black, while a value of 100% leaves the input unchanged. The initial value for interpolation is 1.</p>
+            <ul>
+                <li> brightenss &nbsp; value</li>
+                <li> brightness(0%) &nbsp; Completely black </li>
+                <li> brightness(0.4) &nbsp; 40% brightness </li>
+                <li> brightness(1) &nbsp; No effect </li>
+                <li> brightness(200%) &nbsp; Double brightness </li>
+            </ul>
+
+
+            <img src="../Image/img2.jpeg" alt="" class="filter-brightness">
+        </li>
+        <li>
+            <h3> filter: contrast</h3>
+            <P>The contrast of the result, specified as a number or a percentage. A value under 100% decreases the
+                contrast, while a value over 100% increases it. A value of 0% will create an image that is completely
+                gray, while a value of 100% leaves the input unchanged. The initial value for interpolation is 1</P>
+            <ul>
+                <li>contrast &nbsp; value</li>
+                <li> contrast(0) &nbsp; Completely gray </li>
+                <li> contrast(65%) &nbsp; 65% contrast </li>
+                <li> contrast(1) &nbsp; No effect </li>
+                <li> contrast(200%) &nbsp;Double contrast </li>
+
+
+            </ul>
+
+
+
+            <img src="../Image/img2.jpeg" alt="" class="filter-contract">
+        </li>
+        <li>
+            <h3> filter: drop-shadow</h3>
+            <p>The drop-shadow() function accepts a parameter of type shadow (defined in the box-shadow property), with
+                the exception that the inset keyword and spread parameters are not allowed.</p>
+            <ul>
+                <li>drop-shadow(offset-x offset-y blur-radius color)</li>
+            </ul>
+
+
+            <div>
+                <h3> offset-x offset-y (required) </h3>
+                <p> Two length values that determine the shadow offset. offset-x specifies the horizontal distance,
+                    where negative values place the shadow to the left of the element. offset-y specifies the vertical
+                    distance, where negative values place the shadow above the element. If both values are 0, the shadow
+                    is placed directly behind the element. </p>
+
+                <h3> blur-radius (optional) </h3>
+                <p>The shadow's blur radius, specified as a length. The larger the value, the larger and more blurred
+                    the shadow becomes. If unspecified, it defaults to 0, resulting in a sharp, unblurred edge. Negative
+                    values are not allowed.</P>
+            </div>
+            <img src="../Image/img2.jpeg" alt="" class="filter-drop-shadow">
+        </li>
+        <li>
+            <h3> filter: grayscale</h3>
+            <p>The amount of the conversion, specified as a number or a percentage. A value of 100% is completely
+                grayscale, while a value of 0% leaves the input unchanged. Values between 0% and 100% are linear
+                multipliers on the effect. Default value when omitted is 1. The initial value for interpolation is 0.
+            </p>
+            <ul>
+                <li>grayscale &nbsp; value</li>
+                <li> grayscale(0) &nbsp; No effect </li>
+                <li> grayscale(.7) &nbsp; 70% grayscale </li>
+                <li> grayscale(100%) &nbsp; Completely grayscale </li>
+            </ul>
+
+
+            <img src="../Image/img2.jpeg" alt="" class="filter-grayscale">
+        </li>
+        <li>
+            <h3> filter: hue-rotate</h3>
+            <p>The relative change in hue of the input sample, specified as an angle. A value of 0deg leaves the input
+                unchanged. A positive hue rotation increases the hue value, while a negative rotation decreases the hue
+                value. The initial value for interpolation is 0. There is no minimum or maximum value; hue-rotate(Ndeg)
+                evaluates to N modulo 360.</p>
+            <ul>
+                <li>hue-rotate &nbsp; value</li>
+                <li> hue-rotate(-90deg) &nbsp; Same as 270deg rotation </li>
+                <li> hue-rotate(0deg) &nbsp; No effect </li>
+                <li> hue-rotate(90deg) &nbsp; 90deg rotation </li>
+                <li> hue-rotate(.5turn) &nbsp; 180deg rotation </li>
+                <li> hue-rotate(405deg) &nbsp; Same as 45deg rotation </li>
+            </ul>
+
+
+            <img src="../Image/img2.jpeg" alt="" class="filter-hue-rotate">
+        </li>
+        <li>
+            <h3> filter:invert</h3>
+            <p>The amount of the conversion, specified as a number or a percentage. A value of 100% is completely
+                inverted, while a value of 0% leaves the input unchanged. Values between 0% and 100% are linear
+                multipliers on the effect. The initial value for interpolation is 0.</p>
+            <ul>
+                <li>invert &nbsp; value</li>
+                <li> invert(0) &nbsp; No effect </li>
+                <li> invert(.6) &nbsp; 60% inversion </li>
+                <li> invert(100%) &nbsp; Completely inverted </li>
+            </ul>
+            <img src="../Image/img2.jpeg" alt="" class="filter-invert">
+        </li>
+        <li>
+            <h3> filter: opacity</h3>
+            <p>The amount of the conversion, specified as a number or a percentage. A value of 0% is completely
+                transparent, while a value of 100% leaves the input unchanged. Values between 0% and 100% are linear
+                multipliers on the effect. The initial value for interpolation is 1.</p>
+            <ul>
+                <li>opacity &nbsp; value</li>
+                <li> opacity(0%) &nbsp; Completely transparent </li>
+                <li> opacity(50%) &nbsp; 50% transparent </li>
+                <li> opacity(1) &nbsp; No effect </li>
+            </ul>
+            <img src="../Image/img2.jpeg" alt="" class="filter-opacity">
+        </li>
+        <li>
+            <h3> filter: saturate</h3>
+            <p>The amount of the conversion, specified as a number or a percentage. A value under 100% desaturates the
+                image, while a value over 100% super-saturates it. A value of 0% is completely unsaturated, while a
+                value of 100% leaves the input unchanged. The initial value for interpolation is 1.</p>
+            <ul>
+                <li>saturate &nbsp; value</li>
+                <li> saturate(0) &nbsp; Completely unsaturated </li>
+                <li> saturate(.4) &nbsp; 40% saturated </li>
+                <li> saturate(100%) &nbsp; No effect </li>
+                <li> saturate(200%) &nbsp; Double saturation </li>
+            </ul>
+
+
+            <img src="../Image/img2.jpeg" alt="" class="filter-saturate">
+        </li>
+        <li>
+            <h3> filter: sepia</h3>
+            <p>The amount of the conversion, specified as a number or a percentage. A value of 100% is completely sepia,
+                while a value of 0% leaves the input unchanged. Values between 0% and 100% are linear multipliers on the
+                effect. The initial value for interpolation is 0.</p>
+            <ul>
+                <li>sepia &nbsp; value</li>
+                <li> sepia(0) &nbsp; No effect </li>
+                <li> sepia(.65) &nbsp; 65% sepia </li>
+                <li> sepia(100%) &nbsp; Completely sepia </li>
+            </ul>
+            
+
+
+            <img src="../Image/img2.jpeg" alt="" class="filter-sepia">
+        </li>
+    </ol>
+
+
+
+</body>
+
+</html>

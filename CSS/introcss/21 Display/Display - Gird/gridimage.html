@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid image example-1</title>
+    <style>
+        * {
+            border: 1px solid;
+        }
+        
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: minmax(300px auto);
+            gap: 2px;
+        }
+
+        img {
+            width: 100%;
+        }
+        .img1{
+            grid-column: 1/3    ;
+            grid-row: 1/3;
+        }
+        .img2{
+            grid-column: 3;
+            grid-row: 1;
+        }
+        .img3{
+            grid-column: 3;
+            grid-row: 2;
+        }
+        .img4{
+            grid-column: 2/4;
+            grid-row: 4;
+        }
+        .img5{
+            grid-column:1 ;
+            grid-row: 4;
+        }
+        .img6{
+            grid-column: 1/3;
+            grid-row: 5/7;
+        }
+        .img7{
+            grid-column: 3;
+            grid-row: 5;
+        }
+        .img8{
+            grid-column:3 ;
+            grid-row: 6;
+        }
+        .img9{
+            grid-column:2/4;
+            grid-row:7/9;
+        }
+        .img10{
+            grid-column:1 ;
+            grid-row: 8;
+        }
+
+
+       
+
+     
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="img1"><img src="../Image/download1.jpg" alt=""></div>
+        <div class="img2"><img src="../Image/image2.jpg" alt=""></div>
+        <div class="img3"><img src="../Image/image.3.jpg" alt=""></div>
+        <div class="img4"><img src="../Image/image4.jpg" alt=""></div>
+        <div class="img5"><img src="../Image/images5.jpg" alt=""></div>
+        <div class="img6"><img src="../Image/images6.jpg" alt=""></div>
+        <div class="img7"><img src="../Image/images7.jpg" alt=""></div>
+        <div class="img8"><img src="../Image/images8.jpg" alt=""></div>
+        <div class="img9"><img src="../Image/images9.jpg" alt=""></div>
+        <div class="img10"><img src="../Image/images10.jpg" alt=""></div>
+
+    </div>
+</body>
+
+</html>

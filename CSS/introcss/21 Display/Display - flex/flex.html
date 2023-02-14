@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display flex</title>
+    <style>
+        h3 {
+            background-color: rgba(150, 78, 217, 0.418);
+            border: 2px dotted rgba(82, 82, 185, 0.495);
+            text-transform: capitalize;
+            font-size: 20px;
+        }
+        .flex-not{
+            border: 1px dotted;
+            padding: 3px;
+
+        }
+        .flex-not div{
+            border: 1px solid;
+
+        }
+
+
+        .flex{
+            display: flex;
+            border: 1px solid;
+        }
+        .flex div{
+            border: 1px solid;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3> Display flex</h3>
+    <ul>
+        <li> Block, for sections in a webpage</li>
+        <li> Inline, for text</li>
+        <li> Table, for two-dimensional table data</li>
+        <li> Positioned, for explicit position of an element</li>
+    </ul>
+    <p>The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using
+        float or positioning.</p>
+
+
+        <h3>without flex</h3>
+        <div class="flex-not">
+            <div class="box">box1</div>
+            <div class="box">box2</div>
+            <div class="box">box2</div>
+        </div>
+        <h3>with flex</h3>
+        <div class="flex">
+            <div class="box">box1</div>
+            <div class="box">box2</div>
+            <div class="box">box2</div>
+        </div>
+    </body>
+
+</html>

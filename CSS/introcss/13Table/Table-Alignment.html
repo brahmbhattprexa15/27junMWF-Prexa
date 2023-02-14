@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Alignment</title>
+    <style>
+          h3 {
+            background-color: rgba(150, 78, 217, 0.418);
+            border: 2px dotted rgba(82, 82, 185, 0.495);
+            text-transform: capitalize;
+            font-size: 20px;
+        }
+        table{
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        table th, td{
+            border: 1px solid;
+        }
+        .table-1 table td {
+            text-align: center;
+
+        }
+
+        .table-2 table td{
+            height: 50px;
+            vertical-align: middle;
+            /* vertical-align: bottom; */
+            /* vertical-align: top; */
+            /* vertical-align: auto; */
+        
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <h3>Table Alignment</h3>
+    <ul>
+        <li>Horizontal Alignment</li>
+        <li>Vertical Alignment</li>
+    </ul>
+
+
+    <h3>Horizontal Alignment</h3>
+    <p>The text-align property sets the horizontal alignment (like left, right, or center) of the content in th or td.  <br>
+
+    By default, the content of th elements are center-aligned and the content of td elements are left-aligned.</p>
+
+    <div class="table-1">
+        <table>
+            <tr>
+                <th>test</th>
+                <th>test</th>
+                <th>test</th>
+            </tr>
+            <tr>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+            </tr>
+            <tr>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+            </tr>
+            <tr>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+            </tr>
+        </table>
+     </div>
+
+     <h3>Vertical Alignment </h3>
+       <p>The vertical-align property sets the vertical alignment (like top, bottom, or middle) of the content in th or td. <br>
+        
+        By default, the vertical alignment of the content in a table is middle (for both th and td elements). </p> 
+        <ul>
+          <li>  vertical-align: middle</li>
+          <li>  vertical-align: bottom</li>
+          <li>  vertical-align: top</li>
+          <li>  vertical-align: auto</li>
+        </ul> 
+
+        <div class="table-2">
+            <table>
+                <tr>
+                    <th>test</th>
+                    <th>test</th>
+                    <th>test</th>
+                </tr>
+                <tr>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                </tr>
+                <tr>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                </tr>
+                <tr>
+                    <td>test</td>
+                    <td>test</td>
+                    <td>test</td>
+                </tr>
+            </table>
+         </div>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clear</title>
+    <style>
+        h3 {
+            background-color: rgba(150, 78, 217, 0.418);
+            border: 2px dotted rgba(82, 82, 185, 0.495);
+            text-transform: capitalize;
+            font-size: 20px;
+        }
+        .float{
+            background-color: violet;
+        }
+        .float p{
+            height: 200px;
+            width: 100px;
+            background-color: aquamarine ;
+        }
+       
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+        .clear{
+            clear: both;
+        }
+       
+    </style>
+</head>
+
+<body>
+
+    <h3>clear Property</h3>
+    <p>When we use the float property, and we want the next element below (not on right or left), we will have to use
+        the clear property.</p>
+        
+        <p> The clear property specifies what should happen with the element that is next to a floating element.</p>
+        
+        <ul>
+            <li> none - The element is not pushed below left or right floated elements. This is default</li>
+            <li> left - The element is pushed below left floated elements</li>
+            <li> right - The element is pushed below right floated elements</li>
+            <li> both - The element is pushed below both left and right floated elements</li>
+        </ul>
+        
+        <h3>main disadvantages</h3>
+    <div class="float">
+        <p class="left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, facere? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate cum autem non quo corporis, dignissimos aperiam officia aliquam nemo ipsam est fugit id itaque voluptates placeat eveniet, modi necessitatibus? Id!</p>
+        <p class="right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, facere? Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, laborum voluptatum repellat molestiae ea in consequuntur ipsa totam officiis ratione obcaecati non, beatae omnis quo, repudiandae nulla veniam natus assumenda!</p>
+    </div>
+    <p class="clear">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque cum distinctio sint quod ipsam molestiae blanditiis voluptate, quibusdam quidem sunt obcaecati animi inventore quo nostrum minus incidunt eveniet iusto quasi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab impedit ad sint dolor maxime nesciunt, culpa natus aliquam reprehenderit minus necessitatibus amet qui voluptas inventore! Vel necessitatibus fuga saepe voluptates?</p>
+</body>
+
+</html>

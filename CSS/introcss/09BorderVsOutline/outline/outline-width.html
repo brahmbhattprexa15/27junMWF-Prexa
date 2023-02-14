@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outline - width</title>
+    <style>
+        *{
+            font-size: 20px;
+        }
+         h3 {
+        background-color: teal;
+        color: white;
+        border: 3px dotted black;
+        padding: 5px;
+        text-transform: capitalize;
+       }
+
+       div{
+        width: 200px;
+        height: 100px;
+        margin: 2.5rem;
+        padding: 10px;
+       }
+       .thin{
+        outline-width:thin ;
+        outline-style:solid;
+        outline-color: brown;
+    }
+       .medium{
+        outline-width:medium ;
+        outline-style:solid;
+        outline-color: brown;
+    }
+       .thick{
+        outline-width:thick ;
+        outline-style:solid;
+        outline-color: brown;
+    }
+    
+    .number{
+     outline-width:1px ;
+     outline-style:solid;
+     outline-color: brown;
+ }
+    .number1{
+     outline-width:0.1em ;
+     outline-style:solid;
+     outline-color: brown;
+ }
+
+
+    </style>
+</head>
+<body>
+    <h3>outline-width</h3>
+       <p>The CSS outline-width property sets the thickness of an element's outline. An outline is a line that is drawn around an element, outside the border.</p> 
+
+      <div class="thin"> outline-thin;</div>
+      <div class="medium"> outline-medium;</div>
+      <div class="thick"> outline-thick;</div>
+      <div class="number"> outline-1px;</div>
+      <div class="number1"> outline-0.1em;</div>
+</body>
+</html>

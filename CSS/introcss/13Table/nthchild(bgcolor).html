@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-color (nth-child)</title>
+
+    <style>
+        h3 {
+            background-color: rgba(150, 78, 217, 0.418);
+            border: 2px dotted rgba(82, 82, 185, 0.495);
+            text-transform: capitalize;
+            font-size: 20px;
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            text-transform: uppercase;
+        }
+
+        .table-1 td,
+        .table-1 th {
+            border: 1px solid;
+            padding: 10px;
+        }
+        
+        .table-1 th {
+            background-color: blueviolet;
+        }
+
+        .table-1 tr:nth-child(even) {
+            background-color: aquamarine;
+        }
+
+        .table-1 tr:nth-child(odd) {
+            background-color: rgb(172, 211, 94);
+        }
+
+        /* table- 2 */
+
+
+        .table-2 td,
+        .table-2 th {
+            border: 1px solid;
+            padding: 10px;
+        }
+
+        .table-2 th {
+            background-color: rgb(226, 107, 43);
+        }
+
+        .table-2 tr:nth-child(even) {
+            background-color: rgb(15, 236, 3);
+        }
+
+        .table-2 tr:nth-child(odd) {
+            background-color: rgb(94, 211, 123);
+        }
+
+
+
+       .table-2 tr:hover {
+            background-color: rgb(255, 35, 204);
+        }
+    </style>
+</head>
+
+<body>
+    <h3>nth-child()</h3>
+
+    <p>The :nth-child(n) selector matches every element that is the nth child of its parent.
+        <br>
+        n can be a number, a keyword (odd or even), or a formula (like an + b).
+    </p>
+
+
+    <div class="table-1">
+        <table>
+            <tr>
+                <th>test</th>
+                <th>test</th>
+                <th>test</th>
+            </tr>
+            <tr>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+            </tr>
+            <tr>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+            </tr>
+            <tr>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+            </tr>
+            <tr>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+            </tr>
+        </table>
+    </div>
+    <h3>Hoverable Table</h3>
+    <p> Use the :hover selector on tr to highlight table rows on mouse over </p>
+
+    <div class="table-2">
+        <table>
+            <tr>
+                <th>test</th>
+                <th>test</th>
+                <th>test</th>
+            </tr>
+            <tr>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+            </tr>
+            <tr>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+            </tr>
+            <tr>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+            </tr>
+            <tr>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

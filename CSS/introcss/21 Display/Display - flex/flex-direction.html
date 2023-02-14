@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex direction</title>
+
+    <style>
+        h3 {
+            background-color: rgba(150, 78, 217, 0.418);
+            border: 2px dotted rgba(82, 82, 185, 0.495);
+            text-transform: capitalize;
+            font-size: 20px;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .row-reverse {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .column {
+            display: flex;
+            flex-direction:column;
+        }
+        .column-reverse {
+            display: flex;
+            flex-direction:column-reverse;
+        }
+        </style>
+</head>
+
+<body>
+    <h3></h3>
+    <p>The flex-direction CSS property sets how flex items are placed in the flex container defining the main axis and
+        the direction (normal or reversed).</p>
+
+
+    <h3>row</h3>
+    <p>The flex container's main-axis is defined to be the same as the text direction. The main-start and main-end
+        points are the same as the content direction.</p>
+
+    <div class="row">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div>
+    <h3>row-reverse</h3>
+    <p> Behaves the same as row but the main-start and main-end points are opposite to the content direction.</p>
+    <div class="row-reverse">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div>
+
+    <h3>column</h3>
+       <p>The flex container's main-axis is the same as the block-axis. The main-start and main-end points are the same as the before and after points of the writing-mode.</p> 
+       <div class="column">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div>
+
+    <h3>column-reverse</h3>
+     <p>  Behaves the same as column but the main-start and main-end are opposite to the content direction.</p> 
+     <div class="column-reverse">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div>
+
+
+</body>
+
+</html>

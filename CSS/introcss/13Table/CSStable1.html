@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CSS table 1 </title>
+   <style>
+      table {
+         /* table-width  */
+         width: 50%;
+         margin:0 auto;
+
+         text-transform: uppercase;
+      }
+
+      table,
+      th,
+      td {
+         border: 1px solid black;
+         border-collapse: collapse;
+
+      }
+
+      th {
+         height: 25px;
+         background-color: gray;
+         color: black;
+
+      }
+
+      td {
+         text-align: center;
+      }
+
+      tbody tr:nth-child(even) {
+         background-color: rgba(205, 118, 192, 0.568);
+      }
+      tbody tr:nth-child(even):hover {
+         background-color: rgba(126, 255, 14, 0.568);
+      }
+
+      tbody tr:nth-child(odd) {
+         background-color: rgba(128, 208, 208, 0.257);
+      }
+      tbody tr:nth-child(odd):hover {
+         background-color: orange;
+      }
+
+      /* tbody tr:hover {
+         background-color: coral;
+      } */
+      tfoot tr{
+         background-color: gray;
+      }
+   </style>
+
+
+</head>
+
+<body>
+   <table>
+      <thead>
+         <tr>
+            <th>No.</th>
+            <th>first name</th>
+            <th>last name</th>
+            <th>phone number</th>
+            <th>email</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>1</td>
+            <td>raj</td>
+            <td>raja</td>
+            <td>9878987887</td>
+            <td>raj@mail.com</td>
+         </tr>
+         <tr>
+            <td>2</td>
+            <td>rahul</td>
+            <td>kacha</td>
+            <td>7778871369</td>
+            <td>rahu@mail.com</td>
+         </tr>
+         <tr>
+            <td>3</td>
+            <td>anakur</td>
+            <td>thumar</td>
+            <td>9428877445</td>
+            <td>ankur@mail.com</td>
+         </tr>
+         <tr>
+            <td>4</td>
+            <td>nilesh</td>
+            <td>chandrani</td>
+            <td>9896633221</td>
+            <td>nilesh@mail.com</td>
+         </tr>
+         <tr>
+            <td>5</td>
+            <td>vijay</td>
+            <td>makawana</td>
+            <td>9665744896</td>
+            <td>vijay@mail.com</td>
+         </tr>
+         <tr>
+            <td>6</td>
+            <td>mehul</td>
+            <td>gohil</td>
+            <td>7412369853</td>
+            <td>mehul@mail.com</td>
+         </tr>
+         <tr>
+            <td>7</td>
+            <td>parth</td>
+            <td>vaghela</td>
+            <td>7412255896</td>
+            <td>parth@mail.com</td>
+         </tr>
+         <tr>
+            <td>8</td>
+            <td>parv</td>
+            <td>bhatt</td>
+            <td>6355806774</td>
+            <td>parv@mail.com</td>
+         </tr>
+         <tr>
+            <td>9</td>
+            <td>vivek</td>
+            <td>joshi</td>
+            <td>9428715632</td>
+            <td>vivek@mail.com</td>
+         </tr>
+
+      </tbody>
+      <tfoot>
+         <td colspan="5">&copy; this is information true</td>
+      </tfoot>
+   </table>
+
+
+
+</body>
+
+</html>

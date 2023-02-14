@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display inline</title>
+    <style>
+         h3 {
+            background-color: rgba(150, 78, 217, 0.418);
+            border: 2px dotted rgba(82, 82, 185, 0.495);
+            text-transform: capitalize;
+            font-size: 20px;
+        }
+        .inline{
+            display: inline;
+            margin: 20px;
+            background-color: aquamarine;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>Display inline</h3>
+    <p>Displays an element as an inline element (like <span>). Any height and width properties will have no effect</p>
+   <p> the element generates one or more inline element boxes that do not genrate line breaks or after themselves. it normal flow, the next element will be on the same line if there is space</p>
+   <h3>main  difference inline and inline-block</h3>
+   <p>inline to top and bottom margin not include only apply margin right and left in content </p>
+   <p>inline block to four side margin to content</p>
+
+   <p>Compared to display: inline , the major difference is that display: inline-block allows to set a width and height on the element. Also, with display: inline-block , the top and bottom margins/paddings are respected, but with display: inline they are not.
+</p>
+    
+   <h3>Display inline</h3>
+  <p> after</p>
+   <div class="inline">display inline</div>
+   <div class="inline">display inline</div>
+   <div class="inline">display inline</div>
+   <p> before</p>
+</body>
+</html>

@@ -1,0 +1,24 @@
+Q-1. What are the new tags added in HTML5? 
+<article>=It defines the independent or self-contained content of a webpage.
+<header>=It defines the introductory or navigational content of the webpage.
+<mark>=It represent the text which is highlighted or marked for reference or notation purposes.
+<nav>=It represents the section which contains navigation links.
+<audio>=It defines sound content.
+<video>=It defines video content within HTML document.
+
+Q-2.How to embed audio and video in a webpage? 
+To embed video in HTML, we use the <video> tag. It contains one or more video sources at a time using <source> tag.
+It supports MP4, WebM, and Ogg in all modern browsers.	
+
+Q-3.Semantic element in HTML5? 
+A semantic element clearly describes its meaning to both the browser and the developer. Examples of non-semantic elements: <div> and <span>
+
+
+Q-4.Canvas and SVG tags 
+    
+     		Canvas                                         				SVG
+                                       
+Canvas gives better performance with smaller                 SVG gives better performance with smaller number of objects or larger surface.
+ surface or larger number of objects.
+
+Canvas can be modified through script only.                  SVG can be modified through script and CSS.

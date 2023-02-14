@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-class</title>
+    <style>
+        /* a{
+            color: black;
+        } */
+        a:link{
+            color: orangered;
+        }
+        a:visited{
+            color: brown;
+        }
+        a:focus{
+            color: rgb(124, 2, 89);
+            outline: 5px solid rgb(124, 35, 2);
+        }
+        a:hover {
+            font-size: 50px;
+            color: darkgoldenrod;
+         }
+        .p-cust::first-letter {
+            font-size: 36px;
+        }
+        .p-cust::first-line {
+            color: firebrick;
+        }
+        .p-cust::selection {
+            background-color: orangered;
+            color: white;
+        }
+         /* button{
+            background-color:cadetblue;
+         } */
+
+        button:disabled {
+            background-color:yellowgreen;
+        }
+        input:required{
+            outline: 4px solid rgb(145, 22, 42);
+        }
+        input:valid{
+            outline: 3px solid green;
+        }
+        input:invalid {
+            outline: 5px solid red;
+        }
+            input:checked {
+                outline: 4px solid red;
+            }
+        
+        
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com">google</a> <br>
+    <a href="https://www.other.com">other</a> <br>
+    <input type="text" name="" id=""> <br>
+    <p class="p-cust">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit laborum quo, possimus perferendis illo deserunt quis necessitatibus, labore repudiandae qui facere quos voluptatum. Totam vel a quis, impedit laudantium expedita.</p>
+    <button>Click me nomral</button> <br>
+    <button disabled>Click me disabled</button> <br>
+    <form >
+        <input  type="checkbox"> <br>
+
+        <input type="email" required>
+    </form>
+
+
+    <div>
+      <h3>  What are Pseudo-classes? </h3>
+     <p>  A pseudo-class is used to define a special state of an element. </p>
+
+      <p>For example, it can be used to: </p> 
+      <ul>
+
+      <li> Style an element when a user mouses over it</li>
+     <li> Style visited and unvisited links differently </li>
+      <li> Style an element when it gets focus   </li>
+    </ul>
+    </div>
+</body>
+</html>

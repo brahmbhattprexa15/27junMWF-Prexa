@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All about overflow</title>
+    <style>
+        h3 {
+            background-color: rgba(150, 78, 217, 0.418);
+            border: 2px dotted rgba(82, 82, 185, 0.495);
+            text-transform: capitalize;
+            font-size: 20px;
+        }
+
+        .allaboutoverflow p {
+            background-color: rgba(226, 183, 153, 0.592);
+        }
+
+       
+
+        .properties p {
+            background-color: fuchsia;
+            width: 200px;
+            height: 100px;
+            border: 2px solid black;
+        }
+
+        .visible {
+            /* width: 500px; */
+            height: 500px;
+        }
+
+
+        .overflow-auto {
+            overflow: auto;
+        }
+
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        .overflow-scroll {
+            overflow: scroll;
+        }
+
+        .overflow-visible {
+            overflow: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Overflow </h3>
+    <div class="allaboutoverflow">
+        <p> The overflow CSS shorthand property sets the desired behavior for an element's overflow — i.e. when an
+            element's content is too big to fit in its block formatting context — in both directions. </p>
+        <p>The overflow property is specified as one or two keywords chosen from the list of values below. If two
+            keywords are specified, the first applies to overflow-x and the second to overflow-y. Otherwise, both
+            overflow-x and overflow-y are set to the same value.</p>
+
+        <h3>This property is a shorthand for the following CSS properties: </h3>
+        <div class="list">
+            <ul>
+                <li>
+                    <H3> overflow: visible; </H3>
+                    <P>Default. The overflow is not clipped. The content renders outside the element's box</P>
+                </li>
+                <li>
+                    <H3> overflow: hidden; </H3>
+                    <P>The overflow is clipped, and the rest of the content will be invisible</P>
+                </li>
+                <li>
+                    <H3> overflow: clip;</H3>
+                        <p>Use not</p>
+                    
+                </li>
+                <li>
+                    <h3> overflow: scroll; </h3>
+                    <P>The overflow is clipped, and a scrollbar is added to see the rest of the content</P>
+                </li>
+
+                <li> <h3> overflow: auto; </h3> 
+                <p> Similar to scroll, but it adds scrollbars only when necessary</p></li>
+            </ul>
+        </div>
+    </div>
+    <div class="properties">
+
+
+        <h3> overflow-auto</h3>
+        <p class="overflow-auto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatem quod fugit
+            saepe soluta laborum in est, optio itaque mollitia! Iste dolore similique fugit debitis, ullam eaque ea?
+            Fuga, est Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem magni veniam dolor omnis culpa
+            cum, magnam error architecto. Temporibus cum quos perferendis deleniti quidem voluptate assumenda optio
+            cumque, necessitatibus nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur distinctio
+            adipisci minus perferendis, temporibus itaque inventore soluta officia incidunt asperiores! Aut dolores
+            voluptatum animi dolore saepe enim officiis corrupti nobis?</p>
+        <h3> overflow-hidden </h3>
+        <p class=" overflow-hidden">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatem quod
+            fugit saepe soluta laborum in est, optio itaque mollitia! Iste dolore similique fugit debitis, ullam eaque
+            ea? Fuga, est Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem magni veniam dolor omnis
+            culpa cum, magnam error architecto. Temporibus cum quos perferendis deleniti quidem voluptate assumenda
+            optio cumque, necessitatibus nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam commodi
+            cupiditate esse est earum modi odit, corporis suscipit totam voluptates, natus facilis! Dolore fuga
+            blanditiis voluptatum vitae ipsum eaque aliquid?</p>
+
+        <h3> overflow-scroll </h3>
+        <p class="overflow-scroll">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatem quod
+            fugit saepe soluta laborum in est, optio itaque mollitia! Iste dolore similique fugit debitis, ullam eaque
+            ea? Fuga, est Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem magni veniam dolor omnis
+            culpa cum, magnam error architecto. Temporibus cum quos perferendis deleniti quidem voluptate assumenda
+            optio cumque, necessitatibus nam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae
+            nesciunt facilis dolores omnis aspernatur minima laboriosam animi maxime molestiae temporibus iure in,
+            eveniet enim sit, mollitia alias laudantium ratione neque.</p>
+        <div class="visible">
+            <h3> overflow-visible Default value in overflow</h3>
+            <p class="overflow-visible">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatem
+                quod fugit saepe soluta laborum in est, optio itaque mollitia! Iste dolore similique fugit debitis,
+                ullam eaque ea? Fuga, est Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem magni veniam
+                dolor omnis culpa cum, magnam error architecto. Temporibus cum quos perferendis deleniti quidem
+                voluptate assumenda optio cumque, necessitatibus nam. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Earum culpa ab recusandae aut numquam esse accusamus illum sint, velit maxime pariatur ea libero
+                dolor, sunt, eaque sequi explicabo voluptatibus reiciendis!</p>
+        </div>
+        <h3> without overflow </h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatem quod fugit saepe soluta laborum
+            in est, optio itaque mollitia! Iste dolore similique fugit debitis, ullam eaque ea? Fuga, est Lorem ipsum,
+            dolor sit amet consectetur adipisicing elit. Quidem magni veniam dolor omnis culpa cum, magnam error
+            architecto. Temporibus cum quos perferendis deleniti quidem voluptate assumenda optio cumque, necessitatibus
+            nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur distinctio adipisci minus
+            perferendis, temporibus itaque inventore soluta officia incidunt asperiores! Aut dolores voluptatum animi
+            dolore saepe enim officiis corrupti nobis?</p>
+    </div>
+
+
+</body>
+
+</html>

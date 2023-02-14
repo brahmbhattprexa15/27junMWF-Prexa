@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> grid-template-areas</title>
+    <style>
+        div{
+            border: 1px solid;
+        }
+        .parent {
+            display: grid;
+            grid-template-columns: auto 50px 300px;
+            grid-template-rows: 100px 100px auto;
+            grid-template-areas: "header header header"
+            "main . sidebar"
+            "footer footer footer"
+        }
+        .header{
+            grid-area: header;
+            background-color: aqua;
+        }
+        .main{
+            grid-area: main;
+            background-color: rgb(39, 210, 70);
+
+        }
+        .sidebar{
+            grid-area: sidebar;
+            background-color: rgb(246, 255, 0);
+
+        }
+        .footer{
+            grid-area: footer;
+            background-color: brown;
+        }
+        @media (max-width:700px){
+            .parent{
+                grid-template-columns: auto;
+                grid-template-rows: 80px auto auto 80px;
+                grid-template-areas: "header"
+                "footer"
+                "main"
+                "sidebar"
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <h3>with media query (700px to display small change content )</h3>
+    <div class="parent">
+        <div class="header">header</div>
+        <div class="main">content content </div>
+        <div class="sidebar">sidebar</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify -  content</title>
+    <style>
+         h3 {
+            background-color: rgba(150, 78, 217, 0.418);
+            border: 2px dotted rgba(82, 82, 185, 0.495);
+            text-transform: capitalize;
+            font-size: 20px;
+        }
+        .box{
+            border: 1px solid;
+        }
+        .center{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            border: 1px solid;
+        }
+        .start{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: start;
+            border: 1px solid;
+        }
+        .end{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: end;
+            border: 1px solid;
+        }
+        .flex-start{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            border: 1px solid;
+        }
+        .flex-end{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            border: 1px solid;
+        }
+        .left{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+            border: 1px solid;
+        }
+        .right{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: right;
+            border: 1px solid;
+        }
+        .space-between{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            border: 1px solid;
+        }
+        .space-around{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            border: 1px solid;
+        }
+        .space-evenly{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            border: 1px solid;
+        }
+
+        .stretch{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: stretch;
+            border: 1px solid;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <h3>justify-content</h3>
+    <p>The CSS justify-content property defines how the browser distributes space between and around content items along the main-axis of a flex container.</p>
+      <h3>  justify-content: center;      Pack items around the center </h3>
+
+      <div class="center">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+      </div>
+      <h3>  justify-content: start;        Pack items from the start </h3>
+      <div class="start">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+      </div>
+      
+      <h3>  justify-content: end;         Pack items from the end </h3>
+      <div class="end">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+      </div>
+      
+      <h3>  justify-content: flex-start;  Pack flex items from the start</h3>
+      <div class="flex-start">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+      </div>
+      
+      <h3>  justify-content: flex-end;    Pack flex items from the end </h3>
+      <div class="flex-end">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+      </div>
+      
+      <h3>  justify-content: left;        Pack items from the left </h3>
+      <div class="left">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+      </div>
+      
+      <h3>  justify-content: right;       Pack items from the right </h3>
+      <div class="right">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+      </div>
+      
+
+       <h3> justify-content: space-between; Distribute items evenly The first item is flush with the start,the last is flush with the end </h3>
+       <div class="space-between">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+      </div>
+       <h3> justify-content: space-around;   Distribute items evenly Items have a half-size spaceon either end </h3>
+       <div class="space-around">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+      </div>
+       <h3> justify-content: space-evenly;  Distribute items evenly Items have equal space around them </h3>
+       <div class="space-evenly">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+      </div>
+       <h3> justify-content: stretch;       Distribute items evenly   Stretch 'auto'-sized items to fit the container </h3>
+       <div class="stretch">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+      </div>
+
+</body>
+</html>

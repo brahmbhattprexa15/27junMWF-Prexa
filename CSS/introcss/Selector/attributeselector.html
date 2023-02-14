@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute selector</title>
+    <style>
+
+        a[title]{
+            color: purple;
+            background-color: violet;
+        }
+
+        a[href="https://example.org"] {
+            color:green;
+        }
+
+        a[href$=".org"] {
+            font-style: italic;
+         }
+          a[class~="logo"] {
+                         padding: 2px;
+                         background-color: teal;
+                         color: white;
+          }
+    </style>
+</head>
+<body>
+    <blockquote>
+        <div>
+            <H3>CSS [attribute] Selector</H3>
+            <p>The [attribute] selector is used to select elements with a specified attribute. </p>
+            <a href="#"> without title</a>
+            <a href="#" title="hint"> with title</a>
+        </div>
+        <div>
+          <h3>  CSS [attribute="value"] Selector</h3>
+            <p> The [attribute="value"] selector is used to select elements with a specified attribute and value. </p>
+            <a href="#">without website name</a>
+            <a href="https://example.org">with website name</a>
+        </div>
+        <div>
+            <h3>CSS [attribute$="value"] Selector </h3>
+             <P>The [attribute$="value"] selector is used to select elements whose attribute value ends with a specified value. </P>
+             <a href="#">without title</a>
+             <a href="https://something.org">website name</a>
+        </div>
+        <div>
+           <h3> Definition and Usage</h3>
+            <p>The [attribute~=value] selector is used to select elements with an attribute value containing a specified word. </p>
+            <a class="data logo form - cantrol" href="https://something.org">website name</a>
+            <a class="data logo form- cantrol" href="https://something.org">class with logo name</a>
+
+            
+        </div>
+    </blockquote>
+    
+</body>
+</html>

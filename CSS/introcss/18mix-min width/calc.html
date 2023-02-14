@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+    <style>
+        h3 {
+            background-color: rgba(150, 78, 217, 0.418);
+            border: 2px dotted rgba(82, 82, 185, 0.495);
+            text-transform: capitalize;
+            font-size: 20px;
+        }
+
+        .calc-1 {
+            width: 50%;
+            width: calc(50% + 20%);
+            background-color: blueviolet;
+            border: 2px solid orangered;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .calc-2 {
+            width: 50%;
+            width: calc(50% - 20%);
+            background-color: blueviolet;
+            border: 2px solid orangered;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .calc-3 {
+            width: 15rem;
+            width: calc(15rem *3);
+            background-color: blueviolet;
+            border: 2px solid orangered;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .calc-4 {
+            width: 100%;
+            width: calc(100% / 3);
+            background-color: blueviolet;
+            border: 2px solid orangered;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>calc() calculations</h3>
+
+    <p> The calc() function takes a single expression as its parameter, with the expression's result used as the value.
+        The expression can be any simple expression combining the following operators, using standard operator
+        precedence rules:</p>
+    <ul>
+        <li>
+          <h3>  + &nbsp;&nbsp;&nbsp;
+            Addition. </h3>
+
+            <div class="calc-1">
+                <p> + &nbsp;&nbsp;&nbsp;
+                    Addition.</p>
+            </div>
+        </li>
+
+        <li>
+           <h3> -&nbsp;&nbsp;&nbsp;
+            Subtraction.</h3>
+            <div class="calc-2">
+                <p> -&nbsp;&nbsp;&nbsp;
+                    Subtraction.</p>
+            </div>
+        </li>
+        <li>
+          <h3>* &nbsp;&nbsp;&nbsp;
+            Multiplication. At least one of the arguments must be a number.</h3>  
+
+            <div class="calc-3">
+                <p> * &nbsp;&nbsp;&nbsp;
+                    Multiplication. At least one of the arguments must be a number.
+                </p>
+            </div>
+        </li>
+
+        <li>
+          <h3>  / &nbsp;&nbsp;&nbsp;
+            Division. The right-hand side must be a <number>.</h3>
+
+                <div class="calc-4">
+                    <p>/ &nbsp;&nbsp;&nbsp;
+                        Division. The right-hand side must be a <number>.
+            </p>
+
+                </div>
+        </li>
+    </ul>
+
+    <br>
+    <p> The operands in the expression may be any length syntax value. You can use different units for each value in
+        your expression, if you wish. You may also use parentheses to establish computation order when needed.</p>
+
+
+</body>
+
+</html>

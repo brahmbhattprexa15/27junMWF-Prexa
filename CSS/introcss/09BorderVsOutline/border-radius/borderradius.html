@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius</title>
+    <style>
+       h3 {
+            background-color: teal;
+            color: white;
+            border: 3px dotted black;
+            padding: 5px; 
+            text-transform: capitalize;
+        }
+
+        div{
+            border: 10px solid brown;
+            margin: 20px;
+            height: 100px;
+            width: 200px;
+            padding-right: 20px;
+        }
+        
+        .border-top-left{
+            border-top-left-radius:20px ;
+        }
+        .border-top-right{
+            border-top-right-radius:20px ;
+        }
+        .border-bottom-left{
+            border-bottom-left-radius:20px ;
+        }
+        .border-bottom-right{
+            border-bottom-right-radius: 20px;
+        }
+
+    .box{
+        display: inline-block;
+        border: 20px solid brown;
+        border-radius: 30px 40px 20px 60px;
+
+    }
+    .box1{
+        display: inline-block;
+        border: 20px solid rgb(110, 49, 214);
+        border-radius: 50px 0px 50px 0px;
+        padding: 20px;
+        transition: all 1s;
+
+    }
+    .box1:hover{
+        border-radius: 5px;
+    }
+    .box2   {
+        display: inline-block;
+        border: 20px solid rgb(110, 49, 214);
+        border-radius: 50%;
+        padding: 25px;
+
+    }
+
+      
+
+    </style>
+</head>
+<body>
+    <h3>border-radius </h3>
+     <p> The border-radius CSS property rounds the corners of an element's outer border edge. You can set a single radius to make circular corners, or two radii to make elliptical corners. </p>
+ 
+    <div class="border-top-left">border-top-left</div> 
+    <div class="border-top-right">border-top-right</div> 
+    <div class="border-bottom-left">border-bottom-left</div> 
+    <div class="border-bottom-right">border-bottom-right</div> 
+
+
+    <h3>in multipul   border-radius: 30px 10px 15px 20px; (top , right , bottom, left) (2way top-bottom, right-left)</h3>
+
+
+    <div class="box"> box</div>
+    <div class="box1"> box1 (hover to change to border radius)</div>
+    <div class="box2"> box2 cricle to 50%</div>
+
+
+
+
+   
+</body>
+</html>

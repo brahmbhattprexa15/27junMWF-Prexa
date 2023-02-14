@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All about display grid</title>
+    <style>
+        h3 {
+            background-color: rgba(150, 78, 217, 0.418);
+            border: 2px dotted rgba(82, 82, 185, 0.495);
+            text-transform: capitalize;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>Display grid</h3>
+    <p>
+        CSS Grid Layout excels at dividing a page into major regions or defining the relationship in terms of size,
+        position, and layer, between parts of a control built from HTML primitives.
+    </p>
+
+    <p>Like tables, grid layout enables an author to align elements into columns and rows. However, many more layouts
+        are either possible or easier with CSS grid than they were with tables. For example, a grid container's child
+        elements could position themselves so they actually overlap and layer, similar to CSS positioned elements.</p>
+    <h3>grid-template-columns </h3>
+    <p>grid-template-columns: repeat( 3, 1fr) to column with spaces </p>
+    <p>grid-template-columns: repeat( 3, 0fr) to column without spaces </p>
+    <p>The grid-template-columns property specifies the number (and the widths) of columns in a grid layout.
+        The values are a space separated list, where each value specifies the size of the respective column. </p>
+
+    <h3> grid-template-rows</h3>
+    <p> The grid-template-rows CSS property defines the line names and track sizing functions of the grid rows.</p>
+    <p>The values are a space-separated list, where each value specifies the height of the respective row.</p>
+
+
+    <h3> grid-auto-rows</h3>
+    <p> The grid-auto-rows CSS property specifies the size of an implicitly-created grid row track or pattern of tracks.
+    </p>
+    <ul>
+        <li> grid-auto-rows: min-content;</li>
+        <li> grid-auto-rows: max-content;</li>
+        <li> grid-auto-rows: auto;</li>
+    </ul>
+
+    <h3>grid-auto-columns</h3>
+    <p> The grid-auto-columns CSS property specifies the size of an implicitly-created grid column track or pattern of
+        tracks.</p>
+
+    <p>If a grid item is positioned into a column that is not explicitly sized by grid-template-columns, implicit grid
+        tracks are created to hold it. This can happen either by explicitly positioning into a column that is out of
+        range, or by the auto-placement algorithm creating additional columns.</p>
+    <ul>
+        <li> grid-auto-columns: min-content;</li>
+        <li> grid-auto-columns: max-content;</li>
+        <li> grid-auto-columns: auto;</li>
+    </ul>
+
+    <p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design
+        web pages without having to use floats and positioning.</p>
+
+
+    <h3>Grid Columns</h3>
+    <p>The vertical lines of grid items are called columns.</p>
+    <img src="grid_columns.png" alt="">
+
+    <h3>Grid Rows
+    </h3>
+    <p>The horizontal lines of grid items are called rows.</p>
+    <img src="grid_rows.png" alt="">
+    <h3>column gaps</h3>
+    <h3>row gaps</h3>
+    <h3>Grid Gaps</h3>
+    <p>The spaces between each column/row are called gaps.</p>
+    <img src="grid_gaps.png" alt="">
+
+    <h3>Grid Lines</h3>
+    <p> The lines between columns are called column lines.
+
+        The lines between rows are called row lines.</p>
+    <img src="grid_lines.png" alt="">
+
+
+    <h3> grid-template-areas (for media query)</h3>
+    <p> The grid-template-areas CSS property specifies named grid areas, establishing the cells in the grid and assigning them names.</p>
+    <p>Those areas are not associated with any particular grid item, but can be referenced from the grid-placement properties grid-row-start, grid-row-end, grid-column-start, grid-column-end, and their shorthands grid-row, grid-column, and grid-area.</p>
+    <pre> grid-template-areas: "a b";
+        grid-template-areas:
+          "a b b"
+          "a c d";
+        </pre>
+
+
+
+
+
+
+
+</body>
+
+</html>

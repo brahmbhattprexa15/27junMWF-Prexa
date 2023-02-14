@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient</title>
+    <style>
+        .bg-lin-grad{
+            height: 300px;
+            background: linear-gradient(90deg,#e66465, #9198e5);
+        }
+        .bg-lin-grad-turn{
+            height: 500px;
+            background: linear-gradient(0.73turn, #3f87a6, #ebf8e1, #f69d3c);
+        }
+        .bg-lin-grad-group{
+            height: 500px;
+            background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+        }
+
+        .bg-radial-grad{
+            height: 700px;
+            background: radial-gradient(orangered, white, green);
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="bg-lin-grad">bg-lin-grad</div>
+    <div class="bg-lin-grad-turn">bg-lin-grad-turn</div>
+    <div class="bg-lin-grad-group">bg-lin-grad-group</div>
+    <div class="bg-radial-grad">bg-radial-grad</div>
+
+    
+</body>
+</html>

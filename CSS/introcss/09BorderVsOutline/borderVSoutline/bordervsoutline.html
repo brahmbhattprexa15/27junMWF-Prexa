@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border VS  outline </title>
+    <style>
+        *{
+            text-transform: capitalize;
+            font-size: 20px;
+        }
+        h3{
+            background-color: teal;
+            color: white;
+            border: 3px dotted black;
+            padding: 5px;
+            text-transform: capitalize;
+        }
+        p{
+            background-color: rgb(151, 145, 138);
+        }
+
+         /* example-1 start */
+
+         .border-outline{
+            border: 10px solid black;
+            outline: 20px dotted red;
+            margin: 50px;
+            padding: 20px;
+         }
+         /* example-1 end */
+
+         /* example-2 start */
+         a{
+            border-left:2px solid green ;
+         }
+         a:hover{
+            outline: 2px solid red;
+         }
+
+
+         /* example-2 end */
+
+
+
+
+    </style>
+</head>
+<body>
+      <h3>border and outline difference</h3>
+      <p>Border is created inside the element, where as outline is created outside the element. So border is computed along with the width and height of the element, while outline draws outside the element.(border and outline difference to inspect this page and change width)</p>
+
+     <h3> example-1 </h3>
+
+    before div 
+    <div class="border-outline">border-outline</div>
+    after div
+
+    <h3> example-2 </h3>
+
+    <a href="#">home</a>
+    <a href="#">ABout</a>
+    <a href="#">contact</a>
+    <a href="#">help</a>
+    
+</body>
+</html>

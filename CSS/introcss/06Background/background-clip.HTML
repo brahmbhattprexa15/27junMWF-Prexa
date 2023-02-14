@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-clip</title>
+    <style>
+        div{
+            height: 500px;
+        }
+        .background-clip{
+            background-image: url(../Image/img10.jpeg);
+            border: 15px dotted orangered;
+            /* margin: 10px; */
+            padding: 50px;
+            background-clip: content-box;
+            /* background-clip: padding-box; */
+            /* background-clip: border-box; */
+        }
+        .background-clip2{
+            background-image: url(../Image/img10.jpeg);
+            border: 15px dotted orangered;
+            /* margin: 10px; */
+            padding: 50px;
+            /* background-clip: content-box; */
+            background-clip: padding-box;
+            /* background-clip: border-box; */
+        }
+        .background-clip3{
+            background-image: url(../Image/img10.jpeg);
+            border: 15px dotted orangered;
+            /* margin: 10px; */
+            padding: 50px;
+            /* background-clip: content-box; */
+            /* background-clip: padding-box; */
+            background-clip: border-box;
+            
+        }
+    </style>
+    <style>
+         
+    </style>
+</head>
+<body>
+    <P>background-clip: content-box</P>
+    <div class="background-clip">background-clip: content-box</div>
+    <br>
+    <P>background-clip: padding-box</P>
+    <div class="background-clip2">background-clip: padding-box</div>
+    <br>
+    <P>background-clip: border-box</P>
+    <div class="background-clip3">background-clip: border-box</div>
+    
+</body>
+</html>

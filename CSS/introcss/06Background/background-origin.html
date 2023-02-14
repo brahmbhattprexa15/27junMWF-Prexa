@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-origin</title>
+    <style>
+        div{
+            height: 300px;
+        }
+        .background-origin{
+            background-image: url(../Image/img10.jpeg);
+            border: 15px dotted orangered;
+            padding: 50px;
+            background-origin: border-box;
+            /* background-origin: padding-box; */
+            /* background-origin: content-box; */
+
+                }
+        .background-origin2{
+            background-image: url(../Image/img10.jpeg);
+            border: 15px dotted orangered;
+            padding: 50px;
+            /* background-origin: border-box; */
+            background-origin: padding-box;
+            /* background-origin: content-box; */
+
+                }
+        .background-origin3{
+            background-image: url(../Image/img10.jpeg);
+            border: 15px dotted orangered;
+            padding: 50px;
+            /* background-origin: border-box; */
+            /* background-origin: padding-box; */
+            background-origin: content-box;
+
+                }
+                
+
+    </style>
+</head>
+<body>
+    <div class="background-origin">background-origin:border box</div>
+    <br>
+    <br>
+    <div class="background-origin2">background-origin : padding BOX</div> 
+   <br>
+   <br>
+    <div class="background-origin3">background-origin</div>
+    
+</body>
+</html>

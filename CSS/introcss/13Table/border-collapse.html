@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapse Table Borders</title>
+    <style>
+          h3 {
+            background-color: rgba(150, 78, 217, 0.418);
+            border: 2px dotted rgba(82, 82, 185, 0.495);
+            text-transform: capitalize;
+            font-size: 20px;
+        }
+
+       table, th,td{
+            border: 1px solid;
+        }
+      .table-1 table{
+        border-collapse: collapse;
+        width: 50%;
+        margin: 0 auto;
+      }
+      .table-2 table{
+        border-collapse: separate;
+        width: 50%;
+        margin: 0 auto;
+
+      }
+    </style>
+</head>
+<body>
+    <h3>Collapse Table Borders</h3>
+    <p>The border-collapse property sets whether the table borders should be collapsed into a single border</p>
+<h3> border-collapse: collapse</h3>
+    <div class="table-1">
+        <table>
+            <tr>
+                <th>test</th>
+                <th>test</th>
+                <th>test</th>
+            </tr>
+            <tr>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+            </tr>
+            <tr>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+            </tr>
+            <tr>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+            </tr>
+        </table>
+     </div>
+
+     <h3> border-collapse: separate (defult)</h3>
+    <div class="table-2">
+        <table>
+            <tr>
+                <th>test</th>
+                <th>test</th>
+                <th>test</th>
+            </tr>
+            <tr>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+            </tr>
+            <tr>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+            </tr>
+            <tr>
+                <td>test</td>
+                <td>test</td>
+                <td>test</td>
+            </tr>
+        </table>
+     </div>
+
+</body>
+</html>

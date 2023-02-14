@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS table 2</title>
+    <style>
+        table{
+            margin: 0 auto;
+            text-align: center;
+            text-transform: capitalize;
+            width: 30%;
+        }
+        table,td, th {
+            border: solid black;
+            border-collapse: collapse;
+            
+            
+        }
+        thead th{
+            background-color: rgb(222, 143, 40);
+        }
+        tbody tr:nth-child(even){
+            background-color: rgba(144, 231, 202, 0.744);
+
+        }
+        tbody tr:nth-child(odd){
+            background-color: rgb(98, 52, 52, 0.744);
+
+        }
+        tfoot td{
+            background-color: rgb(222, 143, 40)
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th> first name</th>
+                <th> last name</th>
+                <th> mark</th>
+                <th> result </th>
+            </tr>
+        </thead>
+        <tbody>            <tr>
+                <td> hemanshi</td>
+                <td> ladola</td>
+                <td> 98</td>
+                <td> pass </td>
+            </tr>
+            <tr>
+                <td> vivek</td>
+                <td> sisodiya</td>
+                <td> 89</td>
+                <td> pass </td>
+            </tr>
+            <tr>
+                <td>nandan</td>
+                <td> rathod</td>
+                <td> 70</td>
+                <td>  pass</td>
+            </tr>
+            <tr>
+                <td> jay</td>
+                <td> patel</td>
+                <td> 50</td>
+                <td> pass </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="4">thank you </td>
+        </tfoot>
+
+    </table>
+</body>
+</html>

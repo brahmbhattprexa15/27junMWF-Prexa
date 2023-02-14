@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-size</title>
+    <style>
+        div{
+            height: 300px;
+        }
+      .background-size{
+        background-image: url(../Image/img15.jpeg);
+        border: 15px dotted orangered;
+        padding: 15px;
+        /* background-repeat: no-repeat; */
+        background-position: center;
+        background-size: contain; 
+     }
+      .background-size-contain-norepeat{
+        background-image: url(../Image/img15.jpeg);
+        border: 15px dotted orangered;
+        padding: 15px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain; 
+     }
+      .background-size-cover{
+        background-image: url(../Image/img15.jpeg);
+        border: 15px dotted orangered;
+        padding: 15px;
+        /* background-repeat: no-repeat; */
+        background-position: center;
+        background-size:cover; 
+     }
+     
+     .background-size-number{
+        background-image: url(../Image/img15.jpeg);
+        border: 15px dotted orangered;
+        padding: 15px;
+        /* background-repeat: no-repeat; */
+        background-position: center;
+        background-size: 30% ; 
+     }
+     
+    </style>
+</head>
+<body>
+    <div class="background-size">background-size</div>
+    <div class="background-size-contain-norepeat">background-size-contain-norepeat</div>
+    <div class="background-size-cover">background-size-cover</div>
+    <div class="background-size-number">background-size-number</div>
+    
+</body>
+</html>

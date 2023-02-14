@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All about cursor</title>
+    <style>
+        h3 {
+            background-color: rgba(150, 78, 217, 0.418);
+            border: 2px dotted rgba(82, 82, 185, 0.495);
+            text-transform: capitalize;
+            font-size: 20px;
+        }
+
+        div {
+            background-color: rgb(210, 210, 76);
+            border: 1px solid;
+            margin: 10px 0;
+            width: 50%;
+            font-size: 25px;
+            text-align: center;
+            padding: 5px 0;
+            text-transform: capitalize;
+
+
+        }
+
+        .cursor-auto {
+            cursor: auto;
+        }
+
+        .cursor-default {
+            cursor: default;
+        }
+
+        .cursor-none {
+            cursor: none;
+        }
+
+        .cursor-context-menu {
+            cursor: context-menu;
+        }
+
+        .cursor-help {
+            cursor: help;
+        }
+
+        .cursor-pointer {
+            cursor: pointer;
+        }
+
+        .cursor-progress {
+            cursor: progress;
+        }
+
+        .cursor-wait {
+            cursor: wait;
+        }
+
+        .cursor-cell {
+            cursor: cell;
+        }
+
+        .cursor-crosshair {
+            cursor: crosshair;
+        }
+
+        .cursor-text {
+            cursor: text;
+        }
+
+        .cursor-vertical-text {
+            cursor: vertical-text;
+        }
+
+        .cursor-alias {
+            cursor: alias;
+        }
+
+        .cursor-copy {
+            cursor: move;
+        }
+
+        .cursor-move {
+            cursor: move;
+        }
+
+        .cursor-no-drop {
+            cursor: no-drop;
+        }
+
+        .cursor-not-allowed {
+            cursor: not-allowed;
+        }
+
+        .cursor-grab {
+            cursor: grab;
+        }
+
+        .cursor-grabbing {
+            cursor: grabbing;
+        }
+
+        .cursor-all-scroll {
+            cursor: all-scroll;
+        }
+
+        .cursor-col-resize {
+            cursor: col-resize;
+        }
+
+        .cursor-row-resize {
+            cursor: row-resize;
+        }
+
+        .cursor-n-resize {
+            cursor: n-resize;
+        }
+
+        .cursor-e-resize {
+            cursor: e-resize;
+        }
+
+        .cursor-s-resize {
+            cursor: s-resize;
+        }
+
+        .cursor-w-resize {
+            cursor: w-resize;
+        }
+
+        .cursor-ne-resize {
+            cursor: ne-resize;
+        }
+
+        .cursor-nw-resize {
+            cursor: nw-resize;
+        }
+
+        .cursor-se-resize {
+            cursor: se-resize;
+        }
+
+        .cursor-sw-resize {
+            cursor: sw-resize;
+        }
+
+        .cursor-ew-resize {
+            cursor: ew-resize;
+        }
+
+        .cursor-ns-resize {
+            cursor: ns-resize;
+        }
+
+        .cursor-nesw-resize {
+            cursor: nesw-resize;
+        }
+
+        .cursor-zoom-in {
+            cursor: zoom-in;
+        }
+
+        .cursor-zoom-out {
+            cursor: zoom-out;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>cursor </h3>
+    <p> The cursor CSS property sets the mouse cursor, if any, to show when the mouse pointer is over an element. </p>
+
+    <p> The cursor setting should inform users of the mouse operations that can be performed atp
+        the current location, including: text selection, activating help or context menus, copying content, resizing
+        tables, and so on. You can specify either the type of cursor using a keyword, or load a specific icon to use
+        (with optional fallback images and mandatory keyword as a final fallback).</p>
+
+    <h3>cursor property</h3>
+
+    <ul>
+        <li>
+            <h3>General</h3>
+
+            <UL>
+                <li>
+                    <div class="cursor-auto">
+                        <p> cursor-auto </p>
+                        <p>The UA will determine the cursor to display based on the current context. E.g., equivalent to
+                            text when hovering text.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cursor-default">
+                        <p> cursor-default </p>
+                        <p>The platform-dependent default cursor. Typically an arrow.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cursor-none">
+                        <p> cursor-none</p>
+                        <p> No cursor is rendered.</p>
+                    </div>
+                </li>
+            </UL>
+        </li>
+
+        <li>
+            <h3>Links & status</h3>
+            <ul>
+                <li>
+                    <div class="context-menu">
+                        <p>cursor-context-menu</p>
+                        <p>A context menu is available.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cursor-help">
+                        <p>cursor-help</p>
+                        <p>Help information is available.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cursor-pointer">
+                        <p>cursor-pointer</p>
+                        <p>The cursor is a pointer that indicates a link. Typically an image of a pointing hand.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cursor-progress">
+                        <p>cursor-progress </p>
+                        <p>The program is busy in the background, but the user can still interact with the interface (in
+                            contrast to wait).</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cursor-wait">
+                        <p>cursor-wait</p>
+                        <p>The program is busy, and the user can't interact with the interface (in contrast to
+                            progress). Sometimes an image of an hourglass or a watch.</p>
+                    </div>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <h3>Selection</h3>
+            <ul>
+                <li>
+                    <div class="cursor-cell">
+                        <p>cursor-cell</p>
+                        <p>The table cell or set of cells can be selected.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cursor-crosshair">
+                        <p>cursor-crosshair</p>
+                        <p>Cross cursor, often used to indicate selection in a bitmap.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="cursor-text">
+                        <p>cursor-text</p>
+                        <p>The text can be selected. Typically the shape of an I-beam.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cursor-vertical-text">
+                        <p>cursor-vertical-text</p>
+                        <p>The vertical text can be selected. Typically the shape of a sideways I-beam.</p>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h3>Drag & drop</h3>
+            <ul>
+                <li>
+                    <div class="cursor-alias">
+                        <p>cursor-alias</p>
+                        <p>An alias or shortcut is to be created.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="cursor-copy">
+                        <p>cursor-copy</p>
+                        <p>Something is to be copied.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="cursor-move">
+                        <p>cursor-move</p>
+                        <p>Something is to be moved.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="cursor-no-drop">
+                        <p>cursor-no-drop</p>
+                        <p>An item may not be dropped at the current location.
+                            bug 275173: On Windows and macOS, no-drop is the same as not-allowed.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cursor-not-allowed">
+                        <p>cursor-not-allowed</p>
+                        <p>The requested action will not be carried out.</p>
+                    </div>
+                </li>
+                <li>
+
+                    <div class="grab">
+                        <p>cursor-grab</p>
+                        <p>Something can be grabbed (dragged to be moved).</p>
+                    </div>
+                </li>
+
+
+                <li>
+                    <div class="cursor-grabbing">
+                        <p>cursor-grabbing</p>
+                        <p>Something is being grabbed (dragged to be moved).</p>
+                    </div>
+                </li>
+
+            </ul>
+        </li>
+        <li>
+            <h3>Resizing & scrolling</h3>
+            <ul>
+                <li>
+                    <div class="cursor-all-scroll">
+                        <p>cursor-all-scroll</p>
+                        <p>Something can be scrolled in any direction (panned).
+                            bug 275174: On Windows, all-scroll is the same as move.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cursor-col-resize">
+                        <p>cursor-col-resize</p>
+                        <p>The item/column can be resized horizontally. Often rendered as arrows pointing left
+                            and right with a vertical bar separating them.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cursor-row-resize">
+                        <p>cursor-row-resize</p>
+                        <p>The item/row can be resized vertically. Often rendered as arrows pointing up and down
+                            with a horizontal bar separating them.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cursor-n-resize">
+                        <p>cursor-n-resize</p>
+                        <p>Some edge is to be moved. For example, the se-resize cursor is used when the movement
+                            starts from the south-east corner of the box.
+                            In some environments, an equivalent bidirectional resize cursor is shown. For
+                            example, n-resize and s-resize are the same as ns-resize.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cursor-s-resize	">
+                        <p>cursor-s-resize</p>
+                        <p>Some edge is to be moved. For example, the se-resize cursor is used when the movement
+                            starts from the south-east corner of the box.
+                            In some environments, an equivalent bidirectional resize cursor is shown. For
+                            example, n-resize and s-resize are the same as ns-resize.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cursor-w-resize	">
+                        <p>cursor-w-resize</p>
+                        <p>Some edge is to be moved. For example, the se-resize cursor is used when the movement
+                            starts from the south-east corner of the box.
+                            In some environments, an equivalent bidirectional resize cursor is shown. For
+                            example, n-resize and s-resize are the same as ns-resize.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cursor-ne-resize">
+                        <p>cursor-ne-resize</p>
+                        <p>Some edge is to be moved. For example, the se-resize cursor is used when the movement
+                            starts from the south-east corner of the box.
+                            In some environments, an equivalent bidirectional resize cursor is shown. For
+                            example, n-resize and s-resize are the same as ns-resize.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cursor-nw-resize">
+                        <p>cursor-nw-resize</p>
+                        <p>Some edge is to be moved. For example, the se-resize cursor is used when the movement
+                            starts from the south-east corner of the box.
+                            In some environments, an equivalent bidirectional resize cursor is shown. For
+                            example, n-resize and s-resize are the same as ns-resize.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cursor-se-resize">
+                        <p>cursor-se-resize</p>
+                        <p>Some edge is to be moved. For example, the se-resize cursor is used when the movement
+                            starts from the south-east corner of the box.
+                            In some environments, an equivalent bidirectional resize cursor is shown. For
+                            example, n-resize and s-resize are the same as ns-resize.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cursor-sw-resize">
+                        <p>cursor-sw-resize</p>
+                        <p>Some edge is to be moved. For example, the se-resize cursor is used when the movement
+                            starts from the south-east corner of the box.
+                            In some environments, an equivalent bidirectional resize cursor is shown. For
+                            example, n-resize and s-resize are the same as ns-resize.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cursor-ew-resize">
+                        <p>cursor-ew-resize </p>
+                        <p>Bidirectional resize cursor.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cursorns-resize	">
+                        <p>cursor-ns-resize </p>
+                        <p>Bidirectional resize cursor.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cursor-nwse-resize">
+                        <p>cursor-nwse-resize </p>
+                        <p>Bidirectional resize cursor.</p>
+                    </div>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <h3>Zooming</h3>
+            <ul>
+                <li>
+                    <div class="cursor-zoom-in">
+                        <p>cursor-zoom-in</p>
+                        <p>Something can be zoomed (magnified) in or out.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cursor-zoom-out">
+                        <p>cursor-zoom-out</p>
+                        <p>Something can be zoomed (magnified) in or out.</p>
+                    </div>
+                </li>
+            </ul>
+        </li>
+
+    </ul>
+
+
+
+</body>
+
+</html>

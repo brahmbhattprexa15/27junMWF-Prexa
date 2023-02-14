@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow-y</title>
+</head>
+<style>
+    h3 {
+        background-color: rgba(150, 78, 217, 0.418);
+        border: 2px dotted rgba(82, 82, 185, 0.495);
+        text-transform: capitalize;
+        font-size: 20px;
+    }
+
+    .properties p {
+        background-color: fuchsia;
+        width: 150px;
+        height: 100px;
+        margin-bottom: 12px;
+        border: 2px solid black;
+    }
+
+    .visible {
+        /* width: 500px; */
+        height: 500px;
+    }
+
+    .overflow-y-auto {
+        overflow-y: auto;
+    }
+
+    .overflow-y-hidden {
+        overflow-y: hidden;
+    }
+
+    .overflow-y-scroll {
+        overflow-y: scroll;
+    }
+
+    .overflow-y-visible {
+        overflow-y: visible;
+    }
+</style>
+
+<body>
+    <h3>overflow-y </h3>
+    <p> The overflow-y CSS property sets what shows when content overflows a block-level element's top and bottom edges.
+        This may be nothing, a scroll bar, or the overflow content.</p>
+
+    <p> If overflow-x is hidden, scroll or auto and this property is visible (default) it will implicitly compute to
+        auto. </p>
+
+    <p>The overflow-y property is specified as a single keyword chosen from the list of values below. </p>
+
+    <div class="properties">
+
+
+
+        <h3> overflow-y-auto</h3>
+        <p class="overflow-y-auto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatem quod
+            fugit
+            saepe soluta laborum in est, optio itaque mollitia! Iste dolore similique fugit debitis, ullam eaque ea?
+            Fuga, est Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem magni veniam dolor omnis culpa
+            cum, magnam error architecto. Temporibus cum quos perferendis deleniti quidem voluptate assumenda optio
+            cumque, necessitatibus nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur distinctio
+            adipisci minus perferendis, temporibus itaque inventore soluta officia incidunt asperiores! Aut dolores
+            voluptatum animi dolore saepe enim officiis corrupti nobis?</p>
+        <h3> overflow-y-hidden </h3>
+        <p class=" overflow-y-hidden">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatem quod
+            fugit saepe soluta laborum in est, optio itaque mollitia! Iste dolore similique fugit debitis, ullam eaque
+            ea? Fuga, est Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem magni veniam dolor omnis
+            culpa cum, magnam error architecto. Temporibus cum quos perferendis deleniti quidem voluptate assumenda
+            optio cumque, necessitatibus nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam commodi
+            cupiditate esse est earum modi odit, corporis suscipit totam voluptates, natus facilis! Dolore fuga
+            blanditiis voluptatum vitae ipsum eaque aliquid?</p>
+
+        <h3> overflow-y-scroll </h3>
+        <p class="overflow-y-scroll">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatem quod
+            fugit saepe soluta laborum in est, optio itaque mollitia! Iste dolore similique fugit debitis, ullam eaque
+            ea? Fuga, est Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem magni veniam dolor omnis
+            culpa cum, magnam error architecto. Temporibus cum quos perferendis deleniti quidem voluptate assumenda
+            optio cumque, necessitatibus nam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae
+            nesciunt facilis dolores omnis aspernatur minima laboriosam animi maxime molestiae temporibus iure in,
+            eveniet enim sit, mollitia alias laudantium ratione neque.</p>
+        <div class="visible">
+            <h3> overflow-y-visible Default value in overflow</h3>
+            <p class="overflow-y-visible">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptatem
+                quod fugit saepe soluta laborum in est, optio itaque mollitia! Iste dolore similique fugit debitis,
+                ullam eaque ea? Fuga, est Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem magni veniam
+                dolor omnis culpa cum, magnam error architecto. Temporibus cum quos perferendis deleniti quidem
+                voluptate assumenda optio cumque, necessitatibus nam. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Earum culpa ab recusandae aut numquam esse accusamus illum sint, velit maxime pariatur ea libero
+                dolor, sunt, eaque sequi explicabo voluptatibus reiciendis!</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
